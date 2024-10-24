@@ -3,7 +3,7 @@ import { fonts } from "@/theme/foundations/fonts";
 import { spaces } from "@/theme/foundations/spaces";
 import { Theme } from "@/theme/theme";
 
-interface ThemeColors {
+export interface ThemeColors {
 	mainColor: string;
 	secondaryColor: string;
 	textColor: string;
