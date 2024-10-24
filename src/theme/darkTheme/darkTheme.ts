@@ -3,14 +3,19 @@ import { fonts } from "@/theme/foundations/fonts";
 import { spaces } from "@/theme/foundations/spaces";
 import { Theme } from "@/theme/theme";
 
-export interface ThemeColors {
-	mainColor: string;
-	secondaryColor: string;
-	textColor: string;
-	hoverColor?: string;               // Propiedad opcional
-	disabledColor?: string;            // Propiedad opcional
-	errorBackgroundColor?: string;     // Propiedad opcional
-	errorTextColor?: string;           // Propiedad opcional
-	errorHoverColor?: string;          // Propiedad opcional
-}
-
+export const darkTheme: Theme = {
+	colors: colors,
+	fonts: fonts,
+	spaces: spaces,
+	themeColors: {
+		mainColor: colors.grayScaleE,
+		secondaryColor: colors.grayScaleC,
+		textColor: colors.grayScaleA,
+	},
+	borderRadius: {
+		s: "",
+		m: "",
+		l: "",
+		xl: ""
+	}
+};

@@ -89,13 +89,13 @@ export interface Theme {
 	};
 
 	themeColors: {
-		mainColor: string;
-		secondaryColor: string;
-		textColor: string;
-		hoverColor: string;
-		disabledColor: string;
-		errorBackgroundColor: string;
-		errorTextColor: string;
-		errorHoverColor: string;
+    mainColor: string;
+    secondaryColor: string;
+    textColor: string;
+    hoverColor?: string;               // Propiedad opcional
+    disabledColor?: string;            // Propiedad opcional
+    errorBackgroundColor?: string;     // Propiedad opcional
+    errorTextColor?: string;           // Propiedad opcional
+    errorHoverColor?: string; 
 	};
 }
